@@ -2,16 +2,34 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>CodePen - A Gooey Cursor</title>
+  <title>CodePen - Custom Cursor</title>
   <link rel="stylesheet" href="./style.css">
 
 </head>
 <body>
 <!-- partial:index.partial.html -->
-<canvas id="canvas"></canvas>
-<div id="instructions">move your mousoe around</div>
+<div class="cursor"></div>
+<div class="cursor-follower"></div>
+
+<div id="wrapper">
+  <div class="portfolio-item">
+    <div class="portfolio-thumb">
+      <img src="https://mzeppieri.com/wp-content/uploads/2018/08/adv-phorma-featured-img.png">
+    </div>
+    <div class="portfolio-description">
+      <h3>Lorem Ipsum Dolor Sit Amen</h3>
+      <p>Maecenas diam arcu, rhoncus eu bibendum at, bibendum vel dui.</p>
+      <p class="read-more">Read more</p>
+    </div>
+    <a href="https://www.instagram.com/p/BjrzdsyBEgI/?taken-by=ema.red" class="portfolio-link" target="_blank"></a>
+  </div>
+  <div class="other-links">
+    <a href="https://www.behance.net/EmanuelePapale" class="link">Behance</a> / <a href="https://dribbble.com/EmanuelePapale" class="link">Dribbble</a> / <a href="https://www.linkedin.com/in/emanuelepapale/" class="link">Instagram</a> / <a href="https://www.instagram.com/ema.red/" class="link">Linkedin</a>
+  </div>
+</div>
 <!-- partial -->
-  <script  src="./script.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js'></script><script  src="./script.js"></script>
 
 </body>
 </html>

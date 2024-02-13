@@ -253,4 +253,49 @@ header .button {
   to {
     transform: translate(-50%, -50%) rotate(360deg);
   }
+  .dropdown_menu-4
+  for num in (1..5)
+     .dropdown_item-{num}  
+       transform-origin: top center
+       animation: scaleZ 300ms (num * 60ms) ease-in-out forwards
+
+
+@keyframes scaleZ {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  
+  80% {
+    transform: scale(1.07);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.dropdown_menu-4
+  for num in (1..5)
+     .dropdown_item-{num}  
+       transform-origin: top center
+       animation: scaleZ 300ms (num * 60ms) ease-in-out forwards
+
+
+@keyframes scaleZ {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  
+  80% {
+    transform: scale(1.07);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
 }

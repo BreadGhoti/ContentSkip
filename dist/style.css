@@ -237,13 +237,13 @@ header .button {
   transition: color ease-in-out 0.2s;
 }
 .button:hover {
-  box-shadow: 0 0.50rem 1rem -0.50rem #7f0cb9;
+  box-shadow: 0 0.25rem 1rem -0.25rem #7f0cb9;
 }
 .button:hover::after {
-  transform: scale(1);
+  transform: scale(0);
 }
 .button:hover span {
-  color: var(--grey);
+  color: var(--white);
 }
 
 @keyframes bgSpin {

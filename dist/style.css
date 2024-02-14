@@ -241,7 +241,7 @@ header .button {
   display: block;
   background-color: var(--gray);
   width: calc(100% - var(--border-width) * 2);
-  height: calc(200% - var(--border-width) * 2);
+  height: calc(100% - var(--border-width) * 2);
   left: var(--border-width);
   top: var(--border-width);
   border-radius: 10rem;

@@ -229,7 +229,13 @@ header .button {
   top: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
-  background: linear-gradient(90deg, #80f2b9 0%, #f280b9 40%, #7f0cb9 70%, #0d80b9 100%);
+  background: linear-gradient(
+    90deg,
+    #80f2b9 0%,
+    #f280b9 40%,
+    #7f0cb9 70%,
+    #0d80b9 100%
+  );
   padding-top: 100%;
   animation: bgSpin 5s linear infinite;
 }
@@ -271,19 +277,19 @@ header .button {
   to {
     transform: translate(-50%, -50%) rotate(360deg);
   }
-  a:link { 
-  text-decoration: none; 
-} 
-a:visited { 
-  text-decoration: none; 
-} 
-a:hover { 
-  text-decoration: none; 
-} 
-a:active { 
-  text-decoration: none; 
-}
-.drop{
+  a:link {
+    text-decoration: none;
+  }
+  a:visited {
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  a:active {
+    text-decoration: none;
+  }
+  .drop {
     overflow: hidden;
     list-style: none;
     position: absolute;
@@ -291,8 +297,8 @@ a:active {
     width: 100%;
     left: 0;
     top: 48px;
-    div{
-      @include transform(translate(0,-100%));
+    div {
+      @include transform(translate(0, -100%));
       @include transition(all 0.5s 0.1s);
       position: relative;
     }

@@ -279,23 +279,4 @@ a:active {
       position: relative;
     }
   }
-#marker{
-  height: 6px;
-  background: $secondarycolor !important;
-  position: absolute;
-  bottom: 0;
-  width: $min-width;
-  z-index: 2;
-  @include transition(all 0.35s);
-}
-
-@for $i from 1 through 4{
-  #main li:nth-child(#{$i}){
-    &:hover ul div{
-     @include transform(translate(0,0)); 
-    }
-    &:hover ~ #marker{
-      @include transform(translate(#{(-1+$i)*$min-width},0));
-    }
-  }  
 }

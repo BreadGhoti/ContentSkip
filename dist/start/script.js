@@ -34,7 +34,7 @@ tl
 })
    .to(hero2, {
   width: 'calc(100vw - 4rem)',
-  height: 'calc(150vh - 4rem)',
+  height: 'calc(150vh - 10px)',
   borderRadius:  '2rem',
   duration: 0.7,
   ease: "power1.inOut"

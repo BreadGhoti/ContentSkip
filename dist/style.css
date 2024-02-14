@@ -196,7 +196,7 @@ header .button {
   overflow: hidden;
 }
 .content h1 .line .word {
-  transform: translateY(-100%);
+  transform: translateY(100%);
 }
 .content .text {
   max-width: 24rem;

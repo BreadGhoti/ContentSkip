@@ -118,7 +118,7 @@ body {
   height: 300vh;
   width: 100vw;
   border-radius: 0;
-  overflow: hidden;
+  overflow: shown;
 }
 .hero2 spline-viewer {
   position: absolute;

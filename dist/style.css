@@ -278,12 +278,6 @@ a:active {
       @include transition(all 0.5s 0.1s);
       position: relative;
     }
-    li{
-      display:block;
-      padding: 0;
-      width: 100%;
-      background: $secondarycolor !important;
-    }
   }
 #marker{
   height: 6px;

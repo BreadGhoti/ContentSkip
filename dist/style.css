@@ -89,7 +89,6 @@ body {
   height: var(--circle-size);
   background-color: var(--black);
 }
-
 .hero {
   position: relative;
   display: flex;
@@ -103,6 +102,25 @@ body {
   overflow: hidden;
 }
 .hero spline-viewer {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+.hero2 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem 3rem 3rem;
+  background-color: var(--gray);
+  height: 100vh;
+  width: 100vw;
+  border-radius: 0;
+  overflow: hidden;
+}
+.hero2 spline-viewer {
   position: absolute;
   inset: 0;
   width: 100%;

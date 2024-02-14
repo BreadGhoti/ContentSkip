@@ -9,6 +9,7 @@
 const tl = gsap.timeline();
 const loader = document.querySelector('.loader');
 const hero = document.querySelector('.hero');
+const hero2 = document.querySelector('.hero2');
 const title = document.querySelector('h1');
 const splitTitle = new SplitType(title, {
   type: 'words'
@@ -25,6 +26,13 @@ tl
   delay: 1.5
 })
   .to(hero, {
+  width: 'calc(100vw - 4rem)',
+  height: 'calc(100vh - 4rem)',
+  borderRadius:  '2rem',
+  duration: 0.7,
+  ease: "power1.inOut"
+})
+   .to(hero2, {
   width: 'calc(100vw - 4rem)',
   height: 'calc(100vh - 4rem)',
   borderRadius:  '2rem',

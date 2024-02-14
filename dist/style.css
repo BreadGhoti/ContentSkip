@@ -115,7 +115,7 @@ body {
   justify-content: space-between;
   padding: 2rem 3rem 3rem;
   background-color: var(--gray);
-  height: 100vh;
+  height: 200%;
   width: 100vw;
   border-radius: 0;
   overflow: hidden;

@@ -12,11 +12,13 @@
 }
 
 html {
+  cursor:none;
   font-size: clamp(8px, 1.3vw, 18px);
   font-family: "Manrope", sans-serif;
 }
 
 body {
+  cursor:none;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -27,6 +29,7 @@ body {
 }
 
 .loader {
+  cursor:none;
   display: inline-block;
   position: fixed;
   top: 50%;
@@ -37,6 +40,7 @@ body {
   z-index: 999;
 }
 .loader div {
+  cursor:none;
   box-sizing: border-box;
   display: block;
   position: absolute;
@@ -49,12 +53,15 @@ body {
   border-color: var(--black) transparent transparent transparent;
 }
 .loader div:nth-child(1) {
+  cursor:none;
   animation-delay: -0.45s;
 }
 .loader div:nth-child(2) {
+  cursor:none;
   animation-delay: -0.3s;
 }
 .loader div:nth-child(3) {
+  cursor:none;
   animation-delay: -0.15s;
 }
 

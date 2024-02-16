@@ -198,7 +198,7 @@ header nav ul li a {
   letter-spacing: 0.5px;
   color: var(--black);
 }
-a::before {
+.goober::before {
   content: '';
   position: absolute;
   width: 100%;
@@ -211,7 +211,7 @@ a::before {
   transform: scaleX(0);
   transition: transform .3s ease-in-out;
 }
-a:hover::before {
+.goober:hover::before {
   transform-origin: left;
   transform: scaleX(1);
 }

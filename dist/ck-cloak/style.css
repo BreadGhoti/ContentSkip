@@ -15,9 +15,9 @@
 
 .center {
   border: 0.25rem solid var(--black);
-  border-radius: 8%;
+  border-radius: 2rem;
   position: relative;
-  width: 100%;
+  width: 60%;
   height: 100%;
   top: 50px;
   left: 50px;

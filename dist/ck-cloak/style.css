@@ -15,6 +15,9 @@
 }
 
 .center {
+  position: absolute;
+  left: 50vw;
+  top: 50vh;
   border-radius: 10rem;
   border: 0.25rem solid var(--black);
   display: flex;

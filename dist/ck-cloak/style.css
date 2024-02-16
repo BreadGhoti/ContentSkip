@@ -16,7 +16,7 @@
 .center {
   box-sizing: border-box;
   border: 0.25rem solid var(--black);
-  border-radius: 50%;
+  border-radius: 8%;
   position: relative;
   top: 50px;
   left: 50px;

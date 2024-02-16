@@ -17,8 +17,8 @@
   border: 0.25rem solid var(--black);
   border-radius: 8%;
   position: relative;
-  width: 360px;
-  height: 87px;
+  width: 350px;
+  height: 100%;
   top: 50px;
   left: 50px;
   padding: 10px;

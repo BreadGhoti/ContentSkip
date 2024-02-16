@@ -1,9 +1,4 @@
 /**
- * YouTube Tutorial:
- * https://youtu.be/rbN2FzEZWs0
- */
-
-/**
  * FAKE LOADER
  */
 const tl = gsap.timeline();

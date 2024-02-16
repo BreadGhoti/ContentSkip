@@ -17,7 +17,7 @@
 .center {
   position: absolute;
   left: 36.5vw;
-  top: 37.5vh;
+  top: 36.5vh;
   border-radius: 10rem;
   border: 0.25rem solid var(--black);
   display: flex;

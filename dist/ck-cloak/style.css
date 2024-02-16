@@ -265,6 +265,7 @@ header .button {
   transition: box-shadow ease-in-out 0.2s;
 }
 .btton {
+  border: none;
   cursor:none;
   position: relative;
   display: inline-flex;

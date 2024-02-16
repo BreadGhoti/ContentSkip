@@ -71,31 +71,23 @@
     <script src="./script.js"></script>
     <script src="/omg.js"></script>
 <script>
-  const easterEgg = new Konami(() => {    // get a random number between 0 and 499
-    //
-    var randNum = Math.floor(Math.random() * 500);
+  const easterEgg = new Konami(() => {
+    var urls = new Array();
+urls[0] = "http://learninginhand.com";
+urls[1] = "http://learninginhand.com/about";
+urls[2] = "http://learninginhand.com/contact";
+urls[4] = "http://learninginhand.com/services";
+urls[5] = "http://learninginhand.com/videos";
+urls[6] = "http://learninginhand.com/infographics";
+urls[7] = "http://learninginhand.com/resources";
+urls[8] = "http://learninginhand.com/stickaround";
+urls[9] = "http://learninginhand.com/posts";
+urls[10] = "http://learninginhand.com/pet";
 
-    // An array of URL's
-    var randURLs = [
-        "http://url0",
-        "http://url1",
-        "http://url1"
-    ];
+var random = Math.floor(Math.random()*urls.length);
 
-    // There was a 1 in 500 chance we generated a zero.
-    if (randNum == 0) {
-        // randURLs.length will tell us how many elements are
-        // in the randURLs array - we can use this to generate
-        // a random number between 0 and n (number of elements)
-        //
-        // In our case there are 3 elements in the array, 0, 1
-        // and 2. So we want to get another random number in
-        // the inclusive range 0 - 2
-        //
-        var randURL = Math.floor(Math.random() * randURLs.length);
-
-        window.open(randURLs[randURL]);
-    }})
+window.location = urls[random];
+})
 </script>
   </body>
 </html>

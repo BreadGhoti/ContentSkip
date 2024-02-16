@@ -16,14 +16,12 @@
 
 .center {
   background: --white;
-  color: --black;
-  border-radius: 1em;
-  padding: 1em;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%)
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: var(--black);
+  background-color: white;
 }
 
 html {

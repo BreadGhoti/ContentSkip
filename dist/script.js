@@ -86,8 +86,8 @@ window.addEventListener('mousemove', e => {
 	mouse.y = e.y;
 });
 
-const smallCircleSpeed = 0.5;
-const bigCircleSpeed = 0.15;
+const smallCircleSpeed = 1;
+const bigCircleSpeed = 0.5;
 
 const tick = () => {
 	// Move big circle

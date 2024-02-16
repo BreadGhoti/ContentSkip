@@ -14,7 +14,9 @@
 }
 
 .center {
-  border: 5px solid;
+  box-sizing: border-box;
+  border: 0.25rem solid var(--black);
+  border-radius: 50%;
   position: relative;
   top: 50px;
   left: 50px;

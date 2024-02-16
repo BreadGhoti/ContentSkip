@@ -288,7 +288,7 @@ header .button {
 }
 .btton::before {
   cursor:none;
-  content: "CLOAK";
+  content: "";
   position: absolute;
   left: 50%;
   top: 50%;
@@ -323,7 +323,7 @@ header .button {
 .btton::after {
   cursor:none;
   --border-width: 0.15rem;
-  content: "CLOAKED";
+  content: "CLOAK";
   position: absolute;
   z-index: 1;
   display: block;

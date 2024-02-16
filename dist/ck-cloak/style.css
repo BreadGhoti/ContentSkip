@@ -253,7 +253,7 @@ header .button {
   box-shadow: 0 0.25rem 1rem -0.25rem rgba(127, 12, 185, 0);
   transition: box-shadow ease-in-out 0.2s;
 }
-.div .button {
+.btton {
   cursor:none;
   position: relative;
   display: inline-flex;
@@ -286,7 +286,7 @@ header .button {
   padding-top: 100%;
   animation: bgSpin 5s linear infinite;
 }
-.div .button::before {
+.btton::before {
   cursor:none;
   content: "";
   position: absolute;
@@ -320,7 +320,7 @@ header .button {
   transform: scale(1);
   transition: transform ease-in-out 0.2s;
 }
-.div .button::after {
+.btton::after {
   cursor:none;
   --border-width: 0.15rem;
   content: "";
@@ -343,7 +343,7 @@ header .button {
   color: var(--black);
   transition: color ease-in-out 0.2s;
 }
-.div .button span {
+.btton span {
   cursor:none;
   position: relative;
   z-index: 2;
@@ -354,7 +354,7 @@ header .button {
   cursor:none;
   box-shadow: 0 0.25rem 1rem -0.25rem #7f0cb9;
 }
-.div .button:hover {
+.btton:hover {
   cursor:none;
   box-shadow: 0 0.25rem 1rem -0.25rem #7f0cb9;
 }
@@ -362,14 +362,14 @@ header .button {
   cursor:none;
   transform: scale(0);
 }
-.div .button:hover::after {
+.btton:hover::after {
   cursor:none;
   transform: scale(0);
 }
 .button:hover span {cursor:none;
   color: var(--white);
 }
-.div .button:hover span {cursor:none;
+.btton:hover span {cursor:none;
   color: var(--white);
 }
 

@@ -1,13 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Manrope&display=swap");
+
 :root {
-  cursor:none;
+  cursor: none;
   --gray: #e3eaff;
   --black: #050908;
   --white: #ffffff;
 }
 
 * {
-  cursor:none;
+  cursor: none;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -25,13 +26,13 @@
 }
 
 html {
-  cursor:none;
+  cursor: none;
   font-size: clamp(8px, 1.3vw, 18px);
   font-family: "Manrope", sans-serif;
 }
 
 body {
-  cursor:none;
+  cursor: none;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -42,7 +43,7 @@ body {
 }
 
 .loader {
-  cursor:none;
+  cursor: none;
   display: inline-block;
   position: fixed;
   top: 50%;
@@ -52,8 +53,9 @@ body {
   height: 80px;
   z-index: 999;
 }
+
 .loader div {
-  cursor:none;
+  cursor: none;
   box-sizing: border-box;
   display: block;
   position: absolute;
@@ -65,16 +67,19 @@ body {
   animation: loading-animation 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
   border-color: var(--black) transparent transparent transparent;
 }
+
 .loader div:nth-child(1) {
-  cursor:none;
+  cursor: none;
   animation-delay: -0.45s;
 }
+
 .loader div:nth-child(2) {
-  cursor:none;
+  cursor: none;
   animation-delay: -0.3s;
 }
+
 .loader div:nth-child(3) {
-  cursor:none;
+  cursor: none;
   animation-delay: -0.15s;
 }
 
@@ -82,14 +87,17 @@ body {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
 }
+
 .cursor {
-  cursor:none;
+  cursor: none;
   pointer-events: none;
 }
+
 .cursor .big-circle,
 .cursor .small-circle {
   position: fixed;
@@ -98,20 +106,23 @@ body {
   top: calc(var(--circle-size) / 2 * -1);
   left: calc(var(--circle-size) / 2 * -1);
 }
+
 .cursor .big-circle {
   --circle-size: 2rem;
   width: var(--circle-size);
   height: var(--circle-size);
   border: 1px solid var(--black);
 }
+
 .cursor .small-circle {
   --circle-size: 0.3rem;
   width: var(--circle-size);
   height: var(--circle-size);
   background-color: var(--black);
 }
+
 .hero {
-  cursor:none;
+  cursor: none;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -123,16 +134,18 @@ body {
   border-radius: 0;
   overflow: hidden;
 }
+
 .hero spline-viewer {
-  cursor:none;
+  cursor: none;
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
   opacity: 0;
 }
+
 .hero2 {
-  cursor:none;
+  cursor: none;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -144,8 +157,9 @@ body {
   border-radius: 0;
   overflow: hidden;
 }
+
 .hero2 spline-viewer {
-  cursor:none;
+  cursor: none;
   position: absolute;
   inset: 0;
   width: 100%;
@@ -155,102 +169,115 @@ body {
 
 header,
 .content {
-  cursor:none;
+  cursor: none;
   position: relative;
 }
 
 header {
-  cursor:none;
+  cursor: none;
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   align-items: center;
   opacity: 0;
 }
+
 header .logo {
-  cursor:none;
+  cursor: none;
   display: flex;
   align-items: center;
   font-size: 1.2rem;
   font-family: "DM Sans", sans-serif;
   margin-right: auto;
 }
+
 header .logo svg {
-  cursor:none;
+  cursor: none;
   height: 1.2rem;
   width: 1.2rem;
   margin-right: 0.5rem;
 }
+
 header .logo .copyright {
-  cursor:none;
+  cursor: none;
   font-size: 0.75rem;
   align-self: start;
 }
+
 header nav {
-  cursor:none;
+  cursor: none;
   justify-self: center;
 }
+
 header nav ul {
-  cursor:none;
+  cursor: none;
   display: flex;
   justify-content: center;
   align-items: center;
   list-style: none;
   gap: 2rem;
 }
+
 header nav ul li {
-  cursor:none;
+  cursor: none;
   display: inline-flex;
 }
+
 header nav ul li a {
-  cursor:none;
+  cursor: none;
   text-decoration: none;
   font-size: 0.8rem;
   font-weight: 700;
   letter-spacing: 0.5px;
   color: var(--black);
 }
+
 header .button {
-  cursor:none;
+  cursor: none;
   justify-self: end;
 }
 
 .content {
-  cursor:none;
+  cursor: none;
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
   pointer-events: none;
 }
+
 .content h1 {
-  cursor:none;
+  cursor: none;
   font-family: "DM Sans", sans-serif;
   font-size: 3.5rem;
   line-height: 1;
   font-weight: 400;
   border-radius: 2rem;
 }
+
 .content h1 .line {
-  cursor:none;
+  cursor: none;
   overflow: hidden;
 }
+
 .content h1 .line .word {
-  cursor:none;
+  cursor: none;
   transform: translateY(100%);
 }
+
 .content .text {
-  cursor:none;
+  cursor: none;
   max-width: 24rem;
   margin-left: 4rem;
   opacity: 0;
 }
+
 .content .text p {
-  cursor:none;
+  cursor: none;
   font-size: 1rem;
   line-height: 1.5;
 }
 
 .button {
-  cursor:none;
+  cursor: none;
   position: relative;
   display: inline-flex;
   align-items: center;
@@ -264,9 +291,10 @@ header .button {
   box-shadow: 0 0.25rem 1rem -0.25rem rgba(127, 12, 185, 0);
   transition: box-shadow ease-in-out 0.2s;
 }
+
 .btton {
   border: none;
-  cursor:none;
+  cursor: none;
   position: relative;
   display: inline-flex;
   align-items: center;
@@ -280,44 +308,43 @@ header .button {
   box-shadow: 0 0.25rem 1rem -0.25rem rgba(127, 12, 185, 0);
   transition: box-shadow ease-in-out 0.2s;
 }
+
 .button::before {
-  cursor:none;
+  cursor: none;
   content: "";
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
-  background: linear-gradient(
-    90deg,
-    #80f2b9 0%,
-    #f280b9 40%,
-    #7f0cb9 70%,
-    #0d80b9 100%
-  );
+  background: linear-gradient(90deg,
+      #80f2b9 0%,
+      #f280b9 40%,
+      #7f0cb9 70%,
+      #0d80b9 100%);
   padding-top: 100%;
   animation: bgSpin 5s linear infinite;
 }
+
 .btton::before {
-  cursor:none;
+  cursor: none;
   content: "";
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
-  background: linear-gradient(
-    90deg,
-    #80f2b9 0%,
-    #f280b9 40%,
-    #7f0cb9 70%,
-    #0d80b9 100%
-  );
+  background: linear-gradient(90deg,
+      #80f2b9 0%,
+      #f280b9 40%,
+      #7f0cb9 70%,
+      #0d80b9 100%);
   padding-top: 100%;
   animation: bgSpin 5s linear infinite;
 }
+
 .button::after {
-  cursor:none;
+  cursor: none;
   --border-width: 0.15rem;
   content: "";
   position: absolute;
@@ -332,8 +359,9 @@ header .button {
   transform: scale(1);
   transition: transform ease-in-out 0.2s;
 }
+
 .btton::after {
-  cursor:none;
+  cursor: none;
   --border-width: 0.15rem;
   content: "CLOAK";
   position: absolute;
@@ -348,40 +376,50 @@ header .button {
   transform: scale(1);
   transition: transform ease-in-out 0.2s;
 }
+
 .button span {
-  cursor:none;
+  cursor: none;
   position: relative;
   z-index: 2;
   color: var(--black);
   transition: color ease-in-out 0.2s;
 }
+
 .btton span {
-  cursor:none;
+  cursor: none;
   position: relative;
   z-index: 2;
   color: var(--black);
   transition: color ease-in-out 0.2s;
 }
+
 .button:hover {
-  cursor:none;
+  cursor: none;
   box-shadow: 0 0.25rem 1rem -0.25rem #7f0cb9;
 }
+
 .btton:hover {
-  cursor:none;
+  cursor: none;
   box-shadow: 0 0.25rem 1rem -0.25rem #7f0cb9;
 }
+
 .button:hover::after {
-  cursor:none;
+  cursor: none;
   transform: scale(0);
 }
+
 .btton:hover::after {
-  cursor:none;
+  cursor: none;
   transform: scale(0);
 }
-.button:hover span {cursor:none;
+
+.button:hover span {
+  cursor: none;
   color: var(--white);
 }
-.btton:hover span {cursor:none;
+
+.btton:hover span {
+  cursor: none;
   color: var(--white);
 }
 
@@ -389,21 +427,27 @@ header .button {
   from {
     transform: translate(-50%, -50%) rotate(0deg);
   }
+
   to {
     transform: translate(-50%, -50%) rotate(360deg);
   }
+
   a:link {
     text-decoration: none;
   }
+
   a:visited {
     text-decoration: none;
   }
+
   a:hover {
     text-decoration: none;
   }
+
   a:active {
     text-decoration: none;
   }
+
   .drop {
     overflow: hidden;
     list-style: none;
@@ -412,13 +456,15 @@ header .button {
     width: 100%;
     left: 0;
     top: 48px;
+
     div {
       @include transform(translate(0, -100%));
       @include transition(all 0.5s 0.1s);
       position: relative;
     }
-    input[type="text" id="userInput"] {
-      cursor:none;
+
+    input[type="text"id="userInput"] {
+      cursor: none;
       width: 100%;
       padding: 12px 20px;
       margin: 8px 0;
@@ -429,8 +475,8 @@ header .button {
       outline: none;
     }
 
-    input[type="text" id="userInput"]:focus {
-      cursor:none;
+    input[type="text"id="userInput"]:focus {
+      cursor: none;
       border: 3px solid #555;
     }
   }

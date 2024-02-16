@@ -253,7 +253,40 @@ header .button {
   box-shadow: 0 0.25rem 1rem -0.25rem rgba(127, 12, 185, 0);
   transition: box-shadow ease-in-out 0.2s;
 }
+.div .button {
+  cursor:none;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  overflow: hidden;
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  padding: 0.75rem 1rem;
+  border-radius: 10rem;
+  box-shadow: 0 0.25rem 1rem -0.25rem rgba(127, 12, 185, 0);
+  transition: box-shadow ease-in-out 0.2s;
+}
 .button::before {
+  cursor:none;
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  background: linear-gradient(
+    90deg,
+    #80f2b9 0%,
+    #f280b9 40%,
+    #7f0cb9 70%,
+    #0d80b9 100%
+  );
+  padding-top: 100%;
+  animation: bgSpin 5s linear infinite;
+}
+.div .button::before {
   cursor:none;
   content: "";
   position: absolute;
@@ -287,7 +320,30 @@ header .button {
   transform: scale(1);
   transition: transform ease-in-out 0.2s;
 }
+.div .button::after {
+  cursor:none;
+  --border-width: 0.15rem;
+  content: "";
+  position: absolute;
+  z-index: 1;
+  display: block;
+  background-color: var(--gray);
+  width: calc(100% - var(--border-width) * 2);
+  height: calc(100% - var(--border-width) * 2);
+  left: var(--border-width);
+  top: var(--border-width);
+  border-radius: 10rem;
+  transform: scale(1);
+  transition: transform ease-in-out 0.2s;
+}
 .button span {
+  cursor:none;
+  position: relative;
+  z-index: 2;
+  color: var(--black);
+  transition: color ease-in-out 0.2s;
+}
+.div .button span {
   cursor:none;
   position: relative;
   z-index: 2;
@@ -298,11 +354,22 @@ header .button {
   cursor:none;
   box-shadow: 0 0.25rem 1rem -0.25rem #7f0cb9;
 }
+.div .button:hover {
+  cursor:none;
+  box-shadow: 0 0.25rem 1rem -0.25rem #7f0cb9;
+}
 .button:hover::after {
   cursor:none;
   transform: scale(0);
 }
+.div .button:hover::after {
+  cursor:none;
+  transform: scale(0);
+}
 .button:hover span {cursor:none;
+  color: var(--white);
+}
+.div .button:hover span {cursor:none;
   color: var(--white);
 }
 

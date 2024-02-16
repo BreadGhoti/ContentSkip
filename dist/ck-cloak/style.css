@@ -17,6 +17,8 @@
   border: 0.25rem solid var(--black);
   border-radius: 8%;
   position: relative;
+  width: 80px;
+  height: 80px;
   top: 50px;
   left: 50px;
   padding: 10px;
@@ -332,7 +334,7 @@ header .button {
 .btton::after {
   cursor:none;
   --border-width: 0.15rem;
-  content: "CLOAK";
+  content: "   <br>CLOAK";
   position: absolute;
   z-index: 1;
   display: block;

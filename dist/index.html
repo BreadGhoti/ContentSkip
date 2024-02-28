@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html id="myDiv" lang="en">
   <head>
     <meta charset="UTF-8">
     <title>ContentSkip Exploitation Made Easy</title>
@@ -48,7 +48,7 @@
             </li>
           </ul>
         </nav>
-        <a href="/" class="button">
+        <a  id="myButton" href="/" class="button">
           <span>Get Started</span>
         </a>
       </header>
@@ -69,5 +69,18 @@
     <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js'></script>
     <script src='https://unpkg.com/split-type'></script>
     <script src="./script.js"></script>
+    <script>
+  // select the button and the div
+  const button = document.getElementById('myButton');
+  const div = document.getElementById('myDiv');
+
+  // define the function to change the HTML content
+  function changeContent() {
+    div.innerHTML = '<p>New HTML content!</p>';
+  }
+
+  // add event listener to the button
+  button.addEventListener('click', changeContent);
+</script>
   </body>
 </html>

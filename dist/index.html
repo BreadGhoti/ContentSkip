@@ -69,23 +69,5 @@
     <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js'></script>
     <script src='https://unpkg.com/split-type'></script>
     <script src="./script.js"></script>
-    
-  </body>
+     </body>
 </html>
-<script>
-  // select the button and the div
-  const a = document.getElementById('myButton');
-  const div = document.getElementById('myDiv');
-
-  // define the function to change the HTML content
-  function changeContent() {
-    let file = "https://raw.githubusercontent.com/BreadGhoti/ContentSkip/main/dist/canvas.html"
-
-fetch (file)
-.then(x => x.text())
-.then(y => document.getElementById("myDiv").innerHTML = y);
-  }
-
-  // add event listener to the button
-  a.addEventListener('click', changeContent);
-</script>
